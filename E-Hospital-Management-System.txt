@@ -1,0 +1,6 @@
+E-Hospital-Management-System is a console based application which is built using Java and JDBC.
+This application helps in management of Patients, Doctors, Admin in a easy and comfortable way.
+Using this Application:
+1. Admin can add Doctors,view patients list, view Doctors list, remove doctors, see feedback given by patients,view reports,logout.
+2. Patients can quickly Sign-up, Login, view his/her profile, view doctors, book Appointment, view Report, choose doctor, view Appointments, give feedback, pay online and logout.
+3. Doctor can login, view profile, view appointments, attend Patients and logout.

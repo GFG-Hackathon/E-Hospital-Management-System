@@ -19,7 +19,7 @@ public class Appointment {
 	Scanner sc = new Scanner(System.in);
 
 	/***********************************************************************************************/
-	private int AutoAppointmentID()/* This Method Returns AppointmentID */
+	private int AutoAppointmentID() /* This Method Returns AppointmentID */
 	{
 		int appID = 0;
 		try {

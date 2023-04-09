@@ -26,7 +26,7 @@ public class Admin extends Person {
 		return docid + 1;
 	}
 
-	public int addDoctor()/* This Method add doctor in the system. Admin will Add Doctor */
+	public int addDoctor() /* This Method add doctor in the system. Admin will Add Doctor */
 	{
 		int DoctorID = AutoDoctorID();
 		String password;
@@ -51,10 +51,10 @@ public class Admin extends Person {
 		return DoctorID;
 	}
 
-	public void viewDoctors()/* Admin can view all the Doctor detail */
+	public void viewDoctors() /* Admin can view all the Doctor detail */
 	{
 		try {
-			Connection con = ConnectionProvider.getCon();/* getting connection */
+			Connection con = ConnectionProvider.getCon(); /* getting connection */
 			DBTablePrinter.printTable(con, "Doctors");
 			con.close();
 		} catch (Exception e) {
@@ -62,7 +62,7 @@ public class Admin extends Person {
 		}
 	}
 
-	public void viewPatients()/* Admin can view all the patients detail */
+	public void viewPatients() /* Admin can view all the patients detail */
 	{
 		try {
 			Connection con = ConnectionProvider.getCon();
@@ -72,7 +72,7 @@ public class Admin extends Person {
 		}
 	}
 
-	public void RemoveDoctor(int id)/* Admin can remove doctor */
+	public void RemoveDoctor(int id) /* Admin can remove doctor */
 	{
 		try {
 			Connection con = ConnectionProvider.getCon();
@@ -94,7 +94,7 @@ public class Admin extends Person {
 		}
 	}
 
-	public void ViewAppointment()/* To view all the all the appointments taking place */
+	public void ViewAppointment() /* To view all the all the appointments taking place */
 	{
 		try {
 			Connection con = ConnectionProvider.getCon();

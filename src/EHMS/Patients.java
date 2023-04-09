@@ -6,8 +6,6 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
 
-import EHMS.Register;
-
 public class Patients extends Person// patient class Inheriting from person class//
 {
 	Scanner sc = new Scanner(System.in);
@@ -127,12 +125,12 @@ public class Patients extends Person// patient class Inheriting from person clas
 			while (rs.next()) {
 				t++;
 				System.out.println("\t*** APPOINTMENT - NUMBER : " + t);
-				System.out.print("\t* Appointment_ID : " + rs.getInt(1) + "                          \n");
+				System.out.print("\t* Appointment ID : " + rs.getInt(1) + "                          \n");
 				System.out.print("\t* Problem  :       " + rs.getString(2) + "                       \n");
-				System.out.print("\t* PatientId :      " + rs.getInt(3) + "                          \n");
-				System.out.print("\t* Doctor_Id :      " + rs.getInt(5) + "                          \n");
-				System.out.print("\t* DoctorFees :     " + rs.getString(8) + "                       \n");
-				System.out.print("\t* PaymentStatus :  " + rs.getString(9) + "                       \n");
+				System.out.print("\t* Patient Id :      " + rs.getInt(3) + "                          \n");
+				System.out.print("\t* Doctor Id :      " + rs.getInt(5) + "                          \n");
+				System.out.print("\t* Doctor Fees :     " + rs.getString(8) + "                       \n");
+				System.out.print("\t* Payment Status :  " + rs.getString(9) + "                       \n");
 				System.out.print("\t*************************************************************\n");
 			}
 
@@ -156,12 +154,12 @@ public class Patients extends Person// patient class Inheriting from person clas
 				if (rs.getString(10).compareTo("Completed") == 0) {
 					t++;
 					System.out.println("\t*** APPOINTMENT - NUMBER : " + t);
-					System.out.print("\t* Appointment_ID : " + rs.getInt(1) + "                          \n");
+					System.out.print("\t* Appointment ID : " + rs.getInt(1) + "                          \n");
 					System.out.print("\t* Problem  :       " + rs.getString(2) + "                       \n");
-					System.out.print("\t* PatientId :      " + rs.getInt(3) + "                          \n");
-					System.out.print("\t* Doctor_Id :      " + rs.getInt(5) + "                          \n");
-					System.out.print("\t* DoctorFees :     " + rs.getString(8) + "                       \n");
-					System.out.print("\t* PaymentStatus :  " + rs.getString(9) + "                       \n");
+					System.out.print("\t* Patient Id :      " + rs.getInt(3) + "                          \n");
+					System.out.print("\t* Doctor Id :      " + rs.getInt(5) + "                          \n");
+					System.out.print("\t* Doctor Fees :     " + rs.getString(8) + "                       \n");
+					System.out.print("\t* Payment Status :  " + rs.getString(9) + "                       \n");
 					System.out.print("\t*************************************************************\n");
 				}
 			}
@@ -183,11 +181,11 @@ public class Patients extends Person// patient class Inheriting from person clas
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery("select * from Reports where PatientID = " + id);
 			while (rs.next()) {
-				System.out.print("\t* ReportID  :         " + rs.getInt(1) + "                          \n");
-				System.out.print("\t* Appointment_ID :    " + rs.getInt(2) + "                          \n");
-				System.out.print("\t* PatientId :         " + rs.getInt(3) + "                          \n");
-				System.out.print("\t* Doctor_Id :         " + rs.getInt(4) + "                          \n");
-				System.out.print("\t* MedicinePrescribed :" + rs.getString(5) + "                       \n");
+				System.out.print("\t* Report ID  :         " + rs.getInt(1) + "                          \n");
+				System.out.print("\t* Appointment ID :    " + rs.getInt(2) + "                          \n");
+				System.out.print("\t* Patient Id :         " + rs.getInt(3) + "                          \n");
+				System.out.print("\t* Doctor Id :         " + rs.getInt(4) + "                          \n");
+				System.out.print("\t* Medicine Prescribed :" + rs.getString(5) + "                       \n");
 				System.out.print("\t* Doctor's Message:" + rs.getString(6) + "                          \n");
 				System.out.print("\t*************************************************************\n");
 				checkReport++;

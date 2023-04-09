@@ -37,13 +37,13 @@ public class Report {
 	public void DiagonistReport(int pid, int appid, int docid)/* This Method */
 	{
 		RepId = AutoReportID();
-		System.out.println("ReportID--" + RepId);
+		System.out.println("Report ID--" + RepId);
 		this.pid = pid;
-		System.out.println("PatientID--" + pid);
+		System.out.println("Patient ID--" + pid);
 		this.appid = appid;
-		System.out.println("AppointmentID--" + appid);
+		System.out.println("Appointment ID--" + appid);
 		this.docid = docid;
-		System.out.println("DoctorID--" + docid);
+		System.out.println("Doctor ID--" + docid);
 		System.out.println("Prescribed medicine to patient--");
 		MedicinePrescribed = input.nextLine();
 		System.out.println("Additional Information--");

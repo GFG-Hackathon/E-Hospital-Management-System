@@ -9,7 +9,7 @@ public class Main {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		System.out.println(
-				"\n\t******************************E-HealthCare-Management-Sytem***********************************\n");
+				"\n\t******************************E-HealthCare-Management-System***********************************\n");
 		boolean check = false;
 		Scanner sc = new Scanner(System.in);
 		Admin a = new Admin();
@@ -19,19 +19,13 @@ public class Main {
 			System.out.print(
 					"\t**********************************************************************************************\n");
 			System.out.print(
-					"\t*                                                                                            *\n");
-			System.out.print(
 					"\t*                  1. ADMIN - LOGIN                                                          *\n");
 			System.out.print(
 					"\t*                  2. PATIENT - LOGIN                                                        *\n");
 			System.out.print(
 					"\t*                  3. DOCTOR - LOGIN                                                         *\n");
 			System.out.print(
-					"\t*                                                                                            *\n");
-			System.out.print(
 					"\t*                  4. PATIENT-SIGN-UP                                                        *\n");
-			System.out.print(
-					"\t*                                                                                            *\n");
 			System.out.print(
 					"\t*                  5. EXIT                                                                   *\n");
 			System.out.print(
@@ -41,7 +35,7 @@ public class Main {
 			case 1: // Admins portal
 			{
 				boolean checkadmin = false;
-				System.out.println("*****************Welcome to Admins portal***********************");
+				System.out.println("*****************Welcome to Admin's portal***********************");
 				String un;
 				String pd;
 				System.out.print("USERNAME-->");
@@ -56,19 +50,19 @@ public class Main {
 						System.out.print(
 								"\t*                                                                                            *\n");
 						System.out.print(
-								"\t*                  1.DoctorsList                                                             *\n");
+								"\t*                  1.Doctors List                                                             *\n");
 						System.out.print(
-								"\t*                  2.PatientsList.                                                           *\n");
+								"\t*                  2.Patients List.                                                           *\n");
 						System.out.print(
-								"\t*                  3.AddDoctor                                                               *\n");
+								"\t*                  3.Add Doctor                                                               *\n");
 						System.out.print(
-								"\t*                  4.RemoveDoctor                                                            *\n");
+								"\t*                  4.Remove Doctor                                                            *\n");
 						System.out.print(
-								"\t*                  5.AppointmentsDetail                                                      *\n");
+								"\t*                  5.Appointments Detail                                                      *\n");
 						System.out.print(
-								"\t*                  6.ViewFeedbacks                                                           *\n");
+								"\t*                  6.View Feedbacks                                                           *\n");
 						System.out.print(
-								"\t*                  7.ViewReports                                                             *\n");
+								"\t*                  7.View Reports                                                             *\n");
 						System.out.print(
 								"\t*                  8.LOGOUT                                                                  *\n");
 						System.out.print(
@@ -94,7 +88,7 @@ public class Main {
 						}
 						case 4: {
 							/* To Remove Doctor */
-							System.out.println("Enter doctorID!!");
+							System.out.println("Enter doctor ID!!");
 							int id = sc.nextInt();
 							a.RemoveDoctor(id);
 							break;
@@ -136,7 +130,7 @@ public class Main {
 			{
 				boolean checkPatient = false;
 				int flag = 0;
-				System.out.println("*****************Welcome to patient portal***********************");
+				System.out.println("*****************Welcome to Patient's portal***********************");
 				int id;
 				String pd;
 				System.out.print("ID:");
@@ -164,17 +158,17 @@ public class Main {
 						System.out.print(
 								"\t*                                                                                            *\n");
 						System.out.print(
-								"\t*                  1.ViewProfile                                                             *\n");
+								"\t*                  1.View Profile                                                             *\n");
 						System.out.print(
-								"\t*                  2.viewDoctors                                                             *\n");
+								"\t*                  2.View Doctors                                                             *\n");
 						System.out.print(
-								"\t*                  3.BookAppointments                                                        *\n");
+								"\t*                  3.Book Appointments                                                        *\n");
 						System.out.print(
-								"\t*                  4.ViewReport                                                              *\n");
+								"\t*                  4.View Report                                                              *\n");
 						System.out.print(
-								"\t*                  5.viewAppointments                                                        *\n");
+								"\t*                  5.View Appointments                                                        *\n");
 						System.out.print(
-								"\t*                  6.viewCompletedAppointments                                               *\n");
+								"\t*                  6.View Completed Appointments                                               *\n");
 						System.out.print(
 								"\t*                  7.Give FeedBack                                                           *\n");
 						System.out.print(
@@ -225,7 +219,7 @@ public class Main {
 							break;
 					}
 				} else {
-					System.out.println("Invali UserID or password!!!");
+					System.out.println("Invalid UserID or password!!!");
 				}
 				break;
 			}
@@ -233,7 +227,7 @@ public class Main {
 			case 3: // For Doctor
 			{
 				boolean checkDoctor = false;
-				System.out.println("***************Welcome to Doctors portal******************");
+				System.out.println("***************Welcome to Doctor's portal******************");
 				int flag = 0;
 				int id;
 				String pd;
@@ -261,11 +255,11 @@ public class Main {
 						System.out.print(
 								"\t*                                                                                            *\n");
 						System.out.print(
-								"\t*                  1.view_DOCTOR_Profile                                                     *\n");
+								"\t*                  1.View Doctor Profile                                                     *\n");
 						System.out.print(
-								"\t*                  2.viewAppointments                                                        *\n");
+								"\t*                  2.View Appointments                                                        *\n");
 						System.out.print(
-								"\t*                  3.DiagonistPatient                                                        *\n");
+								"\t*                  3.Diagonist Patient                                                        *\n");
 						System.out.print(
 								"\t*                  4.LOGOUT                                                                  *\n");
 						System.out.print(
@@ -317,7 +311,7 @@ public class Main {
 				break;
 			}
 			case 5: {
-				System.out.println("**THANKS FOR VISITING US - Have A Nice Day**");
+				System.out.println("**THANKS FOR VISITING US - Have A Nice Day!!**");
 				check = true;
 				break;
 			}

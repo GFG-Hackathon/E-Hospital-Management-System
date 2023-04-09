@@ -2,20 +2,25 @@ package EHMS;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class ConnectionProvider {
-	public static Connection getCon() {
+	static {
 		try {
-			String url = "jdbc:mysql://localhost:3306/HealthcareMangaementSystem";
-
-			String uname = "root";
-			String pass = "182736sid";
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "hr", "hr");
-			return con;
-		} catch (Exception e) {
-			return null;
+		} catch (ClassNotFoundException e) {
+			System.out.println("----- Driver Problem: " + e + " -----");
 		}
+	}
+
+	public static Connection getCon() throws SQLException {
+		String url = "jdbc:mysql://localhost:3306/ehms";
+
+		String uname = "root";
+		String pass = "root";
+		Connection con = DriverManager.getConnection(url, uname, pass);
+		return con;
+
 	}
 
 }

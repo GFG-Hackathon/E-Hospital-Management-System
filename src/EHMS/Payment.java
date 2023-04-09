@@ -22,10 +22,10 @@ public class Payment {
 		int x = input.nextInt();
 		if (x == 1) {
 			System.out.println("Your Payment is confirmed");
-			return "Payed";
+			return "Payment Successfull!";
 		} else {
-			System.out.println("Your Appointment is cancelled");
-			return "NotPayed";
+			System.out.println("Your Appointment is Cancelled");
+			return "Payment Not Done!";
 		}
 	}
 }
